@@ -1,0 +1,24 @@
+{
+  "name": "chapter-2-code",
+  "version": "1.0.0",
+  "description": "NPM package for Code part of Chapter 2",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Akshit Baunthiyal <akshit.baunthy@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "browserlist": "^1.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.2",
+    "process": "^0.11.10"
+  },
+  "browserslist": [
+    "last 2 Chrome versions"
+  ]
+}
