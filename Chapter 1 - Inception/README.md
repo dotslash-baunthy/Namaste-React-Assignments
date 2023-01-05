@@ -1,5 +1,6 @@
 ## Q1. What is Emmet?
-A. Emmet is a toolkit. Rules for abbreviating regularly used syntaxes that are dynamically parsed. Unlike common snippets which are pre-made, emmet abbreviations produce output depending on what you type.
+A. Emmet is a toolkit. Rules for abbreviating regularly used syntaxes that are dynamically parsed. Unlike common snippets which are pre-made, emmet abbreviations produce output depending on what you type. <img src="https://user-images.githubusercontent.com/51401711/210760177-1714a0f0-01b9-4cd7-9e9b-dd6ba8e67114.png">
+
 
 ## Q2. Difference between library and framework.
 A. Library -
