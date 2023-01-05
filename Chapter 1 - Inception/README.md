@@ -5,6 +5,7 @@ A. Emmet is a toolkit. Rules for abbreviating regularly used syntaxes that are d
 A. Library -
 * Does the bare minimum to get to where we need.
 * The developer is in control. We call a method from a library as and when needed.
+
 Framework -
 * Requires specialized software to be installed to ‘develop’ something.
 * The developer passes control to the software in the sense that the framework tells us what it requires to function properly.
