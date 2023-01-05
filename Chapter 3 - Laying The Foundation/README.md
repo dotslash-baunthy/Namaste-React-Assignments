@@ -35,5 +35,5 @@ A. As the name suggests, the type attribute inside the script tag specifies what
 ## Q4. Explain `{TitleComponent}` vs. `{<TitleComponent />}` vs. `{<TitleComponent></TitleComponent>}`.
 A. The difference between the three is -
 * `{TitleComponent}` - TitleComponent is a JSX expression or variable.
-* `{<TitleComponent />}` - It is similar to a self-closing tag in HTML.
-* `{<TitleComponent></TitleComponent>}` - Equal to </TitleComponent> if the component does not have any children.
+* `<TitleComponent />` - It is similar to a self-closing tag in HTML.
+* `<TitleComponent></TitleComponent>` - Equal to </TitleComponent> if the component does not have any children.
