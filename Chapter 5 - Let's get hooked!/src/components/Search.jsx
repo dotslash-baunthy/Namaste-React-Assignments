@@ -24,5 +24,3 @@ export const Search = () => {
         </>
     )
 }
-
-export const restaurants = restaurants;
