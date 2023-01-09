@@ -5,7 +5,6 @@ export const BodyComponent = () => {
     return (
         <>
             <Search />
-            <RestaurantList />
         </>
     )
 }

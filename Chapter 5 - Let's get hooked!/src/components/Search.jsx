@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { RESTAURANT_LIST } from "../constants";
+import { RestaurantList } from "./RestaurantList";
 
 export const Search = () => {
     const [searchKey, setSearchKey] = useState();
     const [restaurants, setRestaurants] = useState(RESTAURANT_LIST);
 
-    const filterRestaurants = (restaurants,searchKey) => {
-        const filteredData = restaurants.filter((restaurant)=>{
-            restaurant.data.name.includes(searchKey);
+    const filterRestaurants = () => {
+        const filteredData = restaurants.filter((restaurant) => {
+            return (restaurant.data.name.includes(searchKey));
         })
         return filteredData;
     }
@@ -17,10 +18,12 @@ export const Search = () => {
             <input type="text" placeholder="Search..." onChange={(e) => {
                 setSearchKey(e.target.value);
             }} value={searchKey}></input>
-            <button onClick={()=>{
-                const data = filterRestaurants(restaurants,searchKey);
+            <button onClick={() => {
+                setRestaurants(RESTAURANT_LIST);
+                const data = filterRestaurants();
                 setRestaurants(data);
             }}>Search</button>
+            <RestaurantList restaurantsList={restaurants} />
         </>
     )
 }

@@ -1,12 +1,10 @@
 import { RestaurantCard } from "./RestaurantCard.jsx";
-import { RESTAURANT_LIST } from "../constants.js";
 
-export const RestaurantList = () => {
+export const RestaurantList = (props) => {
     return (
         <div className="restaurantList">
             {
-
-                RESTAURANT_LIST.map((restaurant) => {
+                props.restaurantsList.map((restaurant) => {
                     return (<RestaurantCard {...restaurant.data} key={restaurant.data.id} />);
                 })
             }
