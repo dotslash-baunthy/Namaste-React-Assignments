@@ -763,8 +763,8 @@ const NavItems = () => {
 const HeaderComponent = () => {
     return (
         <div className="header">
-            <Logo />
-            <Heading />
+                <Logo />
+                <Heading />
             <NavItems />
         </div>
     )
