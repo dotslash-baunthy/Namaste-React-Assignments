@@ -3,14 +3,18 @@ import { RESTAURANT_LIST } from "../constants";
 import { RestaurantList } from "./RestaurantList";
 
 export const Search = () => {
-    const [searchKey, setSearchKey] = useState();
+    const [searchKey, setSearchKey] = useState("");
     const [restaurants, setRestaurants] = useState(RESTAURANT_LIST);
 
     const filterRestaurants = () => {
-        const filteredData = restaurants.filter((restaurant) => {
-            return (restaurant.data.name.includes(searchKey));
-        })
-        return filteredData;
+        if (searchKey == "") {
+            return RESTAURANT_LIST;
+        } else {
+            const filteredData = RESTAURANT_LIST.filter((restaurant) => {
+                return (restaurant.data.name.toLocaleLowerCase().includes(searchKey.toLocaleLowerCase()));
+            })
+            return filteredData;
+        }
     }
 
     return (
@@ -19,7 +23,6 @@ export const Search = () => {
                 setSearchKey(e.target.value);
             }} value={searchKey}></input>
             <button onClick={() => {
-                setRestaurants(RESTAURANT_LIST);
                 const data = filterRestaurants();
                 setRestaurants(data);
             }}>Search</button>
