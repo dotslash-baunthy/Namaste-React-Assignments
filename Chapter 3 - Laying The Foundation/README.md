@@ -1,3 +1,5 @@
+## CODE UPDATED IN LATEST WEEK FOLDER
+
 ## Q1. What is JSX?
 A. From https://reactjs.org/ - JSX is a syntax extension to Javascript. It is neither string, nor HTML.
 The main reason for using JSX is the ease of development. Instead of having HTML and JS as two different items altogether, JSX tries to bring together the simplicity of HTML in JS. JSX might look like HTML but it has the full power of Javascript behind it.

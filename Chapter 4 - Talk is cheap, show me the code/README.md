@@ -1,3 +1,5 @@
+## CODE UPDATED IN LATEST WEEK FOLDER
+
 ## Q1. Is JSX mandatory for React?
 A. No.
 

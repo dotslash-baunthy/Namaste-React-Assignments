@@ -1,3 +1,5 @@
+## CODE UPDATED IN LATEST WEEK FOLDER
+
 ## Q1. What is the difference between *Named* export, *Default* export and * as export?
 A. In layman terms, a *Named* export is simply an export that has the same name as the name of the function component. In contrast, a *Default* export can use any name. Using named exports, we can export multiple components from the same file. Default exports allow us to export exactly one component.
 
