@@ -36,3 +36,16 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.shimmerCard {
+    width: 200px;
+    height: 350px;
+    padding: 10px;
+    margin: 10px;
+    background-color: lightgrey;
+}
+
+.shimmerWrap {
+    display: flex;
+    flex-wrap: wrap;
+}
