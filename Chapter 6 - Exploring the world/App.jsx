@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { HeaderComponent } from "./src/components/HeaderComponent.jsx";
-import { BodyComponent } from "./src/components/BodyComponent.jsx";
+import { Header } from "./src/components/Header.jsx";
+import { Body } from "./src/components/Body.jsx";
 
 const AppyLayout = () => {
     return (<>
-        <HeaderComponent />
-        <BodyComponent />
+        <Header />
+        <Body />
     </>
     )
 }
