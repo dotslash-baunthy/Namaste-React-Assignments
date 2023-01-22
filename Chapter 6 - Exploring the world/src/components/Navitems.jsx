@@ -1,4 +1,4 @@
-export const NavItems = () => {
+const NavItems = () => {
     return (
         <div className="navitems">
             <ul>
@@ -10,3 +10,5 @@ export const NavItems = () => {
         </div>
     )
 }
+
+export default NavItems;

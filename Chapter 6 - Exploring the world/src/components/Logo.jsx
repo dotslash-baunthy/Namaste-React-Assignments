@@ -1,8 +1,10 @@
 import logo from "../../assets/logo.jpeg";
 
-export const Logo = () => {
+const Logo = () => {
     return (<div className="logo">
         <img src={logo} />
     </div>
     )
 }
+
+export default Logo;

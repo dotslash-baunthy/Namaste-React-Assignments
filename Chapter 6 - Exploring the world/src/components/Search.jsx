@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import { RestaurantList } from "./RestaurantList.jsx";
-import { Shimmer } from "./Shimmer.jsx";
+import RestaurantList from "./RestaurantList";
+import Shimmer from "./Shimmer";
 
-export const Search = () => {
+const Search = () => {
 
     const [searchKey, setSearchKey] = useState("");
     const [allRestaurants, setAllRestaurants] = useState([]);
@@ -52,3 +52,5 @@ export const Search = () => {
     }
 
 }
+
+export default Search;

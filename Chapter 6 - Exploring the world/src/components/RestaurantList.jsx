@@ -1,6 +1,6 @@
-import { RestaurantCard } from "./RestaurantCard.jsx";
+import RestaurantCard from "./RestaurantCard.jsx";
 
-export const RestaurantList = (props) => {
+const RestaurantList = (props) => {
     return (
         <div className="restaurantList">
             {
@@ -11,3 +11,5 @@ export const RestaurantList = (props) => {
         </div>
     )
 }
+
+export default RestaurantList;

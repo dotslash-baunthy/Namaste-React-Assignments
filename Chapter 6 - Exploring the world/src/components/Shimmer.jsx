@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Shimmer = () => {
+const Shimmer = () => {
     return (
         <div className="shimmerWrap">
             {Array(10)
@@ -13,3 +13,5 @@ export const Shimmer = () => {
         </div>
     )
 }
+
+export default Shimmer;

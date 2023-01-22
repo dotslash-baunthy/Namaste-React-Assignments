@@ -1,6 +1,6 @@
 import {IMG_CDN_URL} from "../constants.js"
 
-export const RestaurantCard = ({ name, cuisines, cloudinaryImageId, lastMileTravelString }) => {
+const RestaurantCard = ({ name, cuisines, cloudinaryImageId, lastMileTravelString }) => {
     return (
         <div className="card">
             <img src={IMG_CDN_URL + cloudinaryImageId} />
@@ -10,3 +10,5 @@ export const RestaurantCard = ({ name, cuisines, cloudinaryImageId, lastMileTrav
         </div>
     )
 }
+
+export default RestaurantCard;

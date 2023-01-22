@@ -1,9 +1,11 @@
-import { Search } from "./Search.jsx";
+import Search from "./Search";
 
-export const Body = () => {
+const Body = () => {
     return (
         <>
             <Search />
         </>
     )
 }
+
+export default Body;

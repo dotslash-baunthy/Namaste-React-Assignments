@@ -1,13 +1,17 @@
-import { Logo } from "./Logo.jsx"
-import { Heading } from "./Heading.jsx"
-import { NavItems } from "./Navitems.jsx"
+import Logo from "./Logo"
+import Heading from "./Heading"
+import NavItems from "./Navitems"
+import Login from "./Login"
 
-export const Header = () => {
+const Header = () => {
     return (
         <div className="header">
             <Logo />
             <Heading />
             <NavItems />
+            <Login />
         </div>
     )
 }
+
+export default Header;
