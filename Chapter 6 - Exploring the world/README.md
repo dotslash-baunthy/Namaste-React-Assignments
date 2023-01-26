@@ -52,4 +52,4 @@ A. CORS stands for Cross-Origin Resource Sharing. It is a mechanism, provided in
 A. `async` and `await` are keywords that enable synchronous, promise-based behaviour to be written in a cleaner style. At the end of the day, they are promises being handled in the same way but a different look. They help us avoice callback hells and keep control of the program rather than handing it over to a callback function that may or may not complete.
 
 ## Q11. What is the use of `const json = await data.json();` in getRestaurants()?
-A. in `getRestaurants()`, data is being fetched from an API. The `await` keyword actually returns a promise object, not the actual data. Basically, we are waiting for the JSON object and as soon as that is avaiable, `data.json()` assures that it is handed over successfully.
+A. In `getRestaurants()`, data is being fetched from an API. The `await` keyword actually returns a promise object, not the actual data. Basically, we are waiting for the JSON object and as soon as that is avaiable, `data.json()` assures that it is handed over successfully.
