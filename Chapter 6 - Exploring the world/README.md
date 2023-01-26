@@ -23,7 +23,7 @@ In the above case, namasteReactFunction() will be called only when the value of 
 ## Q5. What is optional chaining?
 A. Optional chaining is a safe way to access nested properties even in case an adjacent property does not exist. For example, if I want to get property `data` from variable `restaurants` but restaurants is not defined yet (in case of an API call, for example), we could use optional chaining to keep our application from breaking apart and instead gracefully handling the situation.
 
-```const restaurantData = restaurant?.data?```
+```const restaurantData = restaurant?.data```
 
 ## Q6. What is Shimmer UI?
 A. A temporary component that is rendered in place of the actual component when the actual one is taking time to load (in case it is still attempting to process data). It resembles the page's actual UI and instead of blocking the entire page like traditional loaders components, Shimmer UI loaders are shaped similar to how the actual components will end up looking.
