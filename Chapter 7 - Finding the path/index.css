@@ -21,6 +21,11 @@
     width: 70px;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .card {
     width: 200px;
     border: 1px solid black;
@@ -48,4 +53,8 @@
 .shimmerWrap {
     display: flex;
     flex-wrap: wrap;
+}
+
+.menu {
+    display: flex;
 }
