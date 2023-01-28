@@ -47,8 +47,10 @@ const appRouter = createBrowserRouter([
                 errorElement: <Cart />
             },
             {
-                path:"/restaurant/:resId",
-                element: <RestaurantMenu />
+                path: "/restaurant/:resId",
+                element: (<Suspense fallback={<Shimmer />}>
+                    <RestaurantMenu />
+                </Suspense>)
             }
         ]
     }
