@@ -1,14 +1,14 @@
-import React, { Suspense } from "react";
+import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./src/components/Header";
 import Body from "./src/components/Body";
-import About from "./src/components/About";
-import Contact from "./src/components/Contact";
-import Cart from "./src/components/Cart";
+const About = lazy(() => import("./src/components/About"));
+const Contact = lazy(() => import("./src/components/Contact"));
+const Cart = lazy(() => import("./src/components/Cart"));
 import Footer from "./src/components/Footer";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Shimmer from "./src/components/Shimmer";
-import RestaurantMenu from "./src/components/RestaurantMenu";
+const RestaurantMenu = lazy(() => import("./src/components/RestaurantMenu"));
 
 const AppyLayout = () => {
     return (
@@ -33,17 +33,23 @@ const appRouter = createBrowserRouter([
             },
             {
                 path: "/about",
-                element: <About name="Akshit" greeting="Hello" />,
+                element: (<Suspense fallback={<Shimmer />}>
+                    <About name="Akshit" greeting="Hello" />
+                </Suspense>),
                 errorElement: <Error />
             },
             {
                 path: "/contact",
-                element: <Contact />,
+                element: (<Suspense fallback={<Shimmer />}>
+                    <Contact />
+                </Suspense>),
                 errorElement: <Error />
             },
             {
                 path: "/cart",
-                element: <Cart />,
+                element: (<Suspense fallback={<Shimmer />}>
+                    <Cart />
+                </Suspense>),
                 errorElement: <Cart />
             },
             {
