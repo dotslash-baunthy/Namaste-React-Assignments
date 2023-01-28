@@ -1,3 +1,5 @@
+## CODE UPDATED IN LATEST WEEK FOLDER
+
 ## Q1. What is ‘NPM’?
 A. npm is a package manager for the Javascript language. Originally, it stood for Node Package Manager but with the advent of JS and how far things have come, it does not (it is not necessary to use Node for npm).
 It consists of a command line client, also called npm, and an online database of public and paid-for private packages, called the npm registry.
